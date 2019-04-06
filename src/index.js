@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Map } from '@esri/react-arcgis';
-
-import './style.scss';
 import './reset.scss';
+import './style.scss';
+
+import App from './App';
 
 ReactDOM.render(
-	<div
-		className="esri-container"
-		// style={{ height: '500px', width: '1000px' }}
-	>
-		<Map />
+	<div className="container">
+		<App />
 	</div>,
 	document.getElementById('root')
 );
