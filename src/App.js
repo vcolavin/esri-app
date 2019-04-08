@@ -4,8 +4,6 @@ import { interestingPlaces } from './interestingPlaces';
 import Controls from './Controls';
 
 export default class App extends React.Component {
-	initialZoom = 4;
-
 	state = {
 		view: null,
 		mapLoaded: false,
@@ -59,20 +57,25 @@ export default class App extends React.Component {
 	};
 
 	handleSceneLoad = (_map, view) => {
-		window.view = view;
-		this.setState({ view, mapLoaded: true });
+		this.setState({ view, mapLoaded: true }, this.thankUNext);
 	};
 
 	render() {
+		const currentPlace = interestingPlaces[this.state.placeIndex];
+
 		return (
 			<div className="map-wrapper">
 				<Scene
 					viewProperties={{
 						center: [-122.4443, 47.2529],
-						zoom: this.initialZoom
+						zoom: 4
 					}}
 					onLoad={this.handleSceneLoad}
+					className="esri-scene"
 				/>
+				<h1 className="place-title">
+					{currentPlace ? currentPlace.name : 'loading'}
+				</h1>
 				<Controls
 					onLogClick={this.logView}
 					onNextClick={this.thankUNext}

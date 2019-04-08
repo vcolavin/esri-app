@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './reset.scss';
 import './style.scss';
+import 'typeface-homemade-apple';
 
 import App from './App';
 

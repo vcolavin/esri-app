@@ -1,3 +1,7 @@
+:root {
+	font-family: 'Homemade Apple', cursive;
+}
+
 .container {
 	width: 100vw;
 	height: 100vh;
@@ -11,5 +15,9 @@
 	left: 0;
 	right: 0;
 	display: grid;
-	grid-template-columns: 80% 20%;
+	grid-template: 20px auto / 80% 20%;
+}
+
+.esri-scene {
+	grid-row: 1 / 3;
 }
