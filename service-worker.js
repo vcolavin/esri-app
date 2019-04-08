@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/esri-app/precache-manifest.1afc6d9af31fdcf4d7a921d265dcf73d.js"
+  "/esri-app/precache-manifest.2973a18417bc470f71ad39889bf570ec.js"
 );
 
 workbox.clientsClaim();
