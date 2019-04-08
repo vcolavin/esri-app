@@ -36,7 +36,7 @@ export const interestingPlaces = [
 		position: {
 			longitude: -90.33944100109983,
 			latitude: 30.24278483050839,
-			z: 109259.32489797566
+			z: 77887.10107516684
 		}
 	}
 ];
