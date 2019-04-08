@@ -22,7 +22,9 @@ export default class App extends React.Component {
 		this.setState(
 			({ placeIndex }) => ({
 				placeIndex:
-					placeIndex >= interestingPlaces.length ? 0 : placeIndex + 1
+					placeIndex >= interestingPlaces.length - 1
+						? 0
+						: placeIndex + 1
 			}),
 			() => {
 				const nextPlace = interestingPlaces[this.state.placeIndex];
